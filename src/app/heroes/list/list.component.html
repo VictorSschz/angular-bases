@@ -2,7 +2,10 @@
 
 <button *ngIf="heroNames.length > 0"
   (click)="removeLastHero()"
-  class="btn btn-outline-danger">Borrar Último Héroe</button>
+  class="btn btn-outline-danger">
+      Borrar Último Héroe
+</button>
+
 <div *ngIf="deletedHero; else noHayMasHeroes">
   <h3> Héroe Borrado <small class="text-danger"> {{deletedHero}} </small></h3>
 </div>
